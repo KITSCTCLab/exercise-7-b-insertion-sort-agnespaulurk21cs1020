@@ -5,7 +5,7 @@ def insertionSort(array) -> List[int]:
     if array[i]>array[i+1]:
       temp=array[i]
       array[i]=array[i+1]
-      array[i+1]=array[i]
+      array[i+1]=temp
   return array
 
 # data = [9, 5, 1, 4, 3]
