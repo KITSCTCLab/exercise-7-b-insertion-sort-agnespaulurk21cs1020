@@ -1,7 +1,12 @@
 from typing import List
 
 def insertionSort(array) -> List[int]:
-  # Write your code here
+  for i in range(length(array)):
+    if array[i]>array[i+1]:
+      temp=array[i]
+      array[i]=array[i+1]
+      array[i+1]=array[i]
+  return array
 
 # data = [9, 5, 1, 4, 3]
 input_data = input()
