@@ -1,20 +1,14 @@
 from typing import List
 
 def insertionSort(array) -> List[int]:
-  for i in range(len(array)-1):
-    if array[i+1]<array[i]:
-      temp=array[i]
-      array[i]=array[i+1]
-      array[i+1]=temp
-    else:
+  for i in range(1,len(array)):
+      key=array[i]
       j=i-1
-      while j>=0 and j<i:
-        if array[i]<array[j]:
-          temp=array[i]
-          array[i]=array[j]
-          array[j]=temp
-          j=j-1
-        
+      while j>=0 and key<array[j]:
+        array[j=1]=array[j]
+        j-=1
+      array[j+1]=key
+   
   return array
 
 # data = [9, 5, 1, 4, 3]
